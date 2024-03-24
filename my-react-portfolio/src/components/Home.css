@@ -1,0 +1,32 @@
+.custom-button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: hotpink;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    text-align: left;
+}
+
+.bg {
+    /* background-image: url(https://media.discordapp.net/attachments/950311940096393279/1221487173212311625/upscaler-image_2024-03-24_212309931-2x.jpg?ex=6612c194&is=66004c94&hm=317c389065cbc02cea5e2549f03c20d6405d630ca777e2afc763d07f83995028&=&format=webp&width=1053&height=624); */
+    background-color: #1a1a1a;
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the background image */
+    height: 100vh;
+    width: 100%;
+    /* Set the height to full viewport height */
+}
+
+.left-align {
+    text-align: left;
+}
+
+.pds-50 {
+    padding: 0 50px;
+}
