@@ -35,22 +35,22 @@ export default function Navbar() {
       <div className="p-1">
         <ul className="flex justify-around">
           <li>
-            <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300">
+            <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
               Home
             </h5>
           </li>
           <li>
-            <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300">
-              About
+            <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
+              About Me
             </h5>
           </li>
           <li>
-            <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300">
+            <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
               Portfolio
             </h5>
           </li>
           <li>
-            <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300">
+            <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
               Contact
             </h5>
           </li>
