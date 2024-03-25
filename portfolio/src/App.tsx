@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 // import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import { AuroraBackgroundDemo } from "./components/Homeaurora";
-import { MacbookScrollDemo } from "./components/demoMac";
+// import { MacbookScrollDemo } from "./components/demoMac";
 import { ProjectTabs } from "./components/Projects";
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
         <Navbar />
         <AuroraBackgroundDemo />
         <AboutMe />
-        <MacbookScrollDemo />
+        {/* <MacbookScrollDemo /> */}
         <div className="bg-sexyBlack mb-50">
           <ProjectTabs />
         </div>

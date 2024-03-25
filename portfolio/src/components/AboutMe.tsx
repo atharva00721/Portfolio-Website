@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="bg-sexyBlack text-white flex flex-col px-10 pb-10">
+    <div className="bg-sexyBlack text-white flex flex-col px-10">
       <h2 className="pt-10 text-6xl font-bold">About Me</h2>
       <div className="pt-20 flex flex-row">
         <div className="w-1/3">

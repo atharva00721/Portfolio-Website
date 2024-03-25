@@ -58,8 +58,13 @@ export function ProjectTabs() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
-      <Tabs tabs={tabs} />
+    <div className="bg-sexyBlack text-white flex flex-col px-10 pb-10">
+      <div>
+        <h2 className="pt-10 text-6xl font-bold">Projects</h2>
+      </div>
+      <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start mt-10 mb-40">
+        <Tabs tabs={tabs} />
+      </div>
     </div>
   );
 }
