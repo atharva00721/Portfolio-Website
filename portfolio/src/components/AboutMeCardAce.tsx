@@ -27,7 +27,7 @@ export function AboutMeCard() {
               {blogContent.description}
             </h2>
             <div className="flex flex-row justify-between items-center mt-10">
-              <span className="text-sm text-gray-500">{blogContent.data}</span>
+              {/* <span className="text-sm text-gray-500">{blogContent.title}</span> */}
               <div className="relative z-10 px-6 py-2 bg-black text-white font-bold rounded-xl block text-xs">
                 <a
                   className="cursor-none"
