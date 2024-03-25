@@ -1,30 +1,27 @@
 import { useEffect, useState } from "react";
-// import "./Navbar.css"; // Import your CSS file for Navbar styling
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
     };
 
-    // Add event listener to handle scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up by removing event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolled]);
+  }, [prevScrollPos]);
 
   return (
     <nav
       className={`z-40 flex justify-between fixed top-0 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white mt-5 rounded-2xl px-5 py-4 shadow-md w-5/6 transition-all duration-300 ${
-        scrolled ? "bg-blue-900" : ""
+        !visible ? "transform -translate-y-[100px]" : ""
       }`}
     >
       <div className="p-1">
