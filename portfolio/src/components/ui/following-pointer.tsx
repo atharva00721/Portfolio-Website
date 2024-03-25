@@ -41,6 +41,7 @@ export const FollowerPointerCard = ({
   const handleMouseEnter = () => {
     setIsInside(true);
   };
+
   return (
     <div
       onMouseLeave={handleMouseLeave}
@@ -78,13 +79,14 @@ export const FollowPointer = ({
     "var(--red-500)",
     "var(--yellow-500)",
   ];
+
   return (
     <motion.div
       className="h-4 w-4 rounded-full absolute z-50"
       style={{
         top: y,
         left: x,
-        pointerEvents: "none",
+        pointerEvents: "none", // Disable pointer events for the pointer element
       }}
       initial={{
         scale: 1,
@@ -113,7 +115,8 @@ export const FollowPointer = ({
       </svg>
       <motion.div
         style={{
-          backgroundColor: colors[Math.floor(Math.random() * colors.length)],
+          backgroundColor:
+            colors[Math.floor(Math.random() * colors.length)],
         }}
         initial={{
           scale: 0.5,
