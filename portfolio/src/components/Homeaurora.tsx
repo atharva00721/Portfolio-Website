@@ -1,35 +1,40 @@
 "use client";
 import { motion } from "framer-motion";
-// import React from "react";
-import { AuroraBackground } from "./ui/aurora-background";
-import { MovingBorderBtnImg } from "./buttonMovingBordersImg";
+import { LampContainer } from "./ui/lamp";
+("Welcome to my portfolio.");
 
+// const words = [
+//   {
+//     text: "Welcome",
+//   },
+//   {
+//     text: "to",
+//   },
+//   {
+//     text: "my",
+//   },
+//   {
+//     text: "portfolio.",
+//     className: "text-blue-500 dark:text-blue-500",
+//   },
+// ];
 export function AuroraBackgroundDemo() {
   return (
-    <AuroraBackground>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
+    <LampContainer>
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
+        className="mt-[16rem] bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
-          Hi Pookies 💖
-        </div>
-        <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-          Welcome to my portfolio.
-        </div>
-        <button className="font-medium w-14">
-          <MovingBorderBtnImg
-            buttonText="Click Me"
-            imageSrc="https://media.discordapp.net/attachments/950311940096393279/1221573448220803214/image.png?ex=661311ed&is=66009ced&hm=623f69d8181750389cc17e01edd6f92bc2de3891c99112151e116503a3b81d0d&=&format=webp&quality=lossless&width=150&height=150"
-          />
-        </button>
-      </motion.div>
-    </AuroraBackground>
+        Welcome to <br /> My portfolio
+      </motion.h1>
+      <p className="mt-3 text-1xl text-slate-500">Let's take a look around</p>
+      <div className="flex flex-row justifu"></div>
+    </LampContainer>
   );
 }
