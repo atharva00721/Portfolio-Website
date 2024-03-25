@@ -1,14 +1,16 @@
 "use client";
 import { AboutMeCard } from "./AboutMeCardAce";
 import React from "react";
+import { Separator } from "./SeparatorBar";
 
 const AboutMe: React.FC = () => {
   return (
     <div className="bg-sexyBlack text-white flex flex-col px-4 md:px-10 pt-10 md:pt-20">
-      <h2 className="pt-4 md:pt-10 text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 md:text-6xl">
+      <h2 className="pt-4 md:pt-10 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 md:text-6xl">
         About Me
       </h2>
-      <div className="pt-10 md:pt-20 flex flex-col md:flex-row">
+      <Separator />
+      <div className="pt-10 md:pt-10 flex flex-col md:flex-row">
         <div className="md:w-1/3 max-w-full md:max-w-xs md:mx-4">
           <AboutMeCard />
         </div>
