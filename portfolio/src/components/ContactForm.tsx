@@ -36,26 +36,28 @@ export function CardWithForm() {
                     <Label htmlFor="name" className="text-white">
                       Name
                     </Label>
-                    <Input id="name" placeholder="Name of your project" />
+                    <Input id="name" placeholder="" />
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="email" className="text-white">
                       Email
                     </Label>
-                    <Input id="email" placeholder="Name of your project" />
+                    <Input id="email" placeholder="" />
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="Message" className="text-white">
                       Message
                     </Label>
-                    <Input id="Message" placeholder="Name of your project" />
+                    <Input id="Message" placeholder="Say Hi!" />
                   </div>
                 </div>
               </form>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline">Cancel</Button>
-              <Button>Deploy</Button>
+              {/* <Button variant="outline">Cancel</Button> */}
+              <Button variant="outline" className="border-1 border-cyan-300">
+                Send
+              </Button>
             </CardFooter>
           </Card>
         </div>
