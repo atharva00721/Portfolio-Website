@@ -1,62 +1,68 @@
-"use client";
-
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
 import { Button } from "../components/ui/button";
+import { Separator } from "./SeparatorBar";
 import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "../components/ui/form";
-import { Input } from "../components/ui/input";
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
+import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 
-const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-});
-
-export function ProfileForm() {
-  // 1. Define your form.
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: "",
-    },
-  });
-
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
+export function CardWithForm() {
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="username"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Username</FormLabel>
-              <FormControl>
-                <Input placeholder="shadcn" {...field} />
-              </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit">Submit</Button>
-      </form>
-    </Form>
+    <div className="w-[90%] mx-auto">
+      <h2 className="pt-4 md:pt-10 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 md:text-6xl">
+        Contact
+      </h2>
+      <Separator />
+      <div className="mb-10"></div>
+      <div className="grid grid-rows-2 md:grid-cols-2">
+        <div>
+          <Card className="mx-auto bg-gray-900 border-0 p-5 md:rounded-l-3xl md:rounded-r-none rounded-t-3xl rounded-b-none">
+            <CardHeader className="text-5xl text-white">
+              <CardTitle className="font-bold tracking-wide">
+                Get in Touch!
+              </CardTitle>
+              <CardDescription className="text-zinc-200">Hello</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form>
+                <div className="grid w-full items-center gap-4">
+                  <div className="flex flex-col space-y-1.5">
+                    <Label htmlFor="name" className="text-white">
+                      Name
+                    </Label>
+                    <Input id="name" placeholder="Name of your project" />
+                  </div>
+                  <div className="flex flex-col space-y-1.5">
+                    <Label htmlFor="email" className="text-white">
+                      Email
+                    </Label>
+                    <Input id="email" placeholder="Name of your project" />
+                  </div>
+                  <div className="flex flex-col space-y-1.5">
+                    <Label htmlFor="Message" className="text-white">
+                      Message
+                    </Label>
+                    <Input id="Message" placeholder="Name of your project" />
+                  </div>
+                </div>
+              </form>
+            </CardContent>
+            <CardFooter className="flex justify-between">
+              <Button variant="outline">Cancel</Button>
+              <Button>Deploy</Button>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 overflow-hidden h-[461px] md:rounded-r-3xl md:rounded-l-none rounded-b-3xl rounded-t-none">
+          <BackgroundGradientAnimation />
+        </div>
+      </div>
+    </div>
   );
 }

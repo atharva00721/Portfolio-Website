@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import { AuroraBackgroundDemo } from "./components/Homeaurora";
 import ProjectsTabs from "./components/Projects";
 // import { ProfileForm } from "./components/ContactForm";
+import { CardWithForm } from "./components/ContactForm";
 
 export default function App() {
   return (
@@ -12,10 +13,10 @@ export default function App() {
         <Navbar />
         <AuroraBackgroundDemo />
         <AboutMe />
-        <div className="bg-sexyBlack mb-50">
-          <ProjectsTabs />
-        </div>
-        {/* <ProfileForm /> */}
+
+        <ProjectsTabs />
+
+        <CardWithForm />
       </div>
     </>
   );

@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { Separator } from "./SeparatorBar";
-import { TabsDemo } from "./projectstab";
+import { Tab } from "./projectstab";
 import { Button } from "./ui/button";
-
+// import { CardWithForm } from "./ContactForm";
 const ProjectsTabs: React.FC = () => {
   return (
     <div className="bg-sexyBlack text-white flex flex-col px-4 md:px-10 pt-10 md:pt-0">
@@ -12,7 +12,7 @@ const ProjectsTabs: React.FC = () => {
       </h2>
       <Separator />
       <div className="p-5 pt-10 flex justify-center ">
-        <TabsDemo />
+        <Tab />
       </div>
       <div>
         <Button className="mr-5 float-right">

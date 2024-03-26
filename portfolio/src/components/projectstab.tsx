@@ -14,7 +14,7 @@ import {
   TabsTrigger,
 } from "../components/ui/tabs";
 
-export function TabsDemo() {
+export function Tab() {
   return (
     <Tabs defaultValue="project1" className="w-full">
       <TabsList className="grid w-full grid-cols-2 md:grid-cols-3">
@@ -25,10 +25,12 @@ export function TabsDemo() {
         </TabsTrigger>
       </TabsList>
       <TabsContent value="project1">
-        <Card>
-          <CardHeader>
-            <CardTitle>Pwd gnrtor</CardTitle>
-            <CardDescription>
+        <Card className="bg-gray-900 border-0">
+          <CardHeader className="text-4xl text-white">
+            <CardTitle className="font-bold tracking-wide">
+              Pwd gnrtor
+            </CardTitle>
+            <CardDescription className="text-zinc-300">
               Make changes to your account here. Click save when you're done.
             </CardDescription>
           </CardHeader>
@@ -39,7 +41,7 @@ export function TabsDemo() {
               className="rounded-xl mx-auto"
             />
           </CardContent>
-          <CardFooter className="ml-10">
+          <CardFooter className="pl-10">
             <a href="/">
               <img
                 src="https://media.discordapp.net/attachments/950311940096393279/1221948123832909915/github-icons.png?ex=66146edf&is=6601f9df&hm=8226c7140335ccd9e3e58a1c6628f52bc7ab945ed3a179c1e041f4066f5b2bad&=&format=webp&quality=lossless&width=72&height=72"
@@ -50,10 +52,10 @@ export function TabsDemo() {
         </Card>
       </TabsContent>
       <TabsContent value="project2">
-        <Card>
-          <CardHeader>
-            <CardTitle>Car(cat)</CardTitle>
-            <CardDescription>get a dog and a cat</CardDescription>
+        <Card className="bg-gray-900 border-0">
+          <CardHeader className="text-4xl text-white">
+            <CardTitle className="font-bold tracking-wide">Car(cat)</CardTitle>
+            <CardDescription className="text-zinc-300">get a dog and a cat</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
             <img
@@ -73,10 +75,12 @@ export function TabsDemo() {
         </Card>
       </TabsContent>
       <TabsContent value="project3">
-        <Card>
-          <CardHeader>
-            <CardTitle>Hie pookie</CardTitle>
-            <CardDescription>ayee</CardDescription>
+        <Card className="bg-gray-900 border-0">
+          <CardHeader className="text-4xl text-white">
+            <CardTitle className="font-bold tracking-wide">
+              Hie pookie
+            </CardTitle>
+            <CardDescription className="text-zinc-300">ayee</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
             <img
