@@ -1,9 +1,9 @@
 import { FollowerPointerCard } from "./ui/following-pointer";
 
-export function AboutMeCard() {
+export function AboutMeCardtab() {
   return (
     <div className="w-full mx-auto flex items-center justify-center">
-      <div className="w-80 flex-shrink-0">
+      <div className="w-full flex-shrink-0">
         <FollowerPointerCard
           title={
             <TitleComponent
@@ -74,8 +74,10 @@ const blogContent = {
   title: "Who am I?",
   description:
     "Hello! I'm Atharva Raj Singh Thakur, a passionate Programmer based in Indore. With a keen eye for detail and a love for creativity, I strive to [Briefly describe your mission or goal]",
-  image: "https://i.pinimg.com/736x/5e/cf/65/5ecf65ce06fdecff4ed19d9556149b58.jpg",
-  authorAvatar: "https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525",
+  image:
+    "https://i.pinimg.com/736x/5e/cf/65/5ecf65ce06fdecff4ed19d9556149b58.jpg",
+  authorAvatar:
+    "https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525",
 };
 
 const TitleComponent = ({

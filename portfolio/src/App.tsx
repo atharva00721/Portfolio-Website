@@ -6,17 +6,18 @@ import ProjectsTabs from "./components/Projects";
 // import { ProfileForm } from "./components/ContactForm";
 import { CardWithForm } from "./components/ContactForm";
 
+// import TerminalContact from "./components/test";
+
 export default function App() {
   return (
     <>
-      <div className="bg-sexyBlack pb-96">
+      <div className="bg-sexyBlack">
         <Navbar />
         <AuroraBackgroundDemo />
         <AboutMe />
-
         <ProjectsTabs />
-
         <CardWithForm />
+        {/* <TerminalContact /> */}
       </div>
     </>
   );

@@ -12,36 +12,40 @@ const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ visible }) => {
       }`}
     >
       <div className="flex flex-row">
-        <Avatar
-          className="rounded-full w-[35px] h-[35px] p-0 m-0"
-          size="8"
-          src="https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525"
-          fallback="A"
-        />
-        <h4 className="text-pink-500 uppercase tracking-wide font-bold pl-2 my-auto hidden md:block">
-          Moon
-        </h4>
+        <a href="#home" className="w-[35px] h-[35px]">
+          <Avatar
+            className="rounded-full w-[35px] h-[35px] p-0 m-0"
+            size="8"
+            src="https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525"
+            fallback="A"
+          />
+        </a>
+        <a href="#home" className="my-auto">
+          <h4 className="text-pink-500 uppercase tracking-wide font-bold pl-2 my-auto hidden md:block">
+            Moon
+          </h4>
+        </a>
       </div>
       <div className="p-1">
         <ul className="flex justify-around">
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              Home
+              <a href="#home">Home</a>
             </h5>
           </li>
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              About Me
+              <a href="#aboutme">About Me</a>
             </h5>
           </li>
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              Portfolio
+              <a href="#projects">Portfolio</a>
             </h5>
           </li>
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              Contact
+              <a href="#contact">Contact</a>
             </h5>
           </li>
         </ul>

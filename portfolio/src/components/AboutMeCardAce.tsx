@@ -12,7 +12,7 @@ export function AboutMeCard() {
           />
         }
       >
-        <div className="relative overflow-hidden h-full rounded-2xl transition duration-200 group bg-gray-900 hover:shadow-xl border border-gray-900">
+        <div className="relative overflow-hidden h-full rounded-2xl transition duration-200 group bg-gray-900 hover:shadow-xl border border-gray-900 pb-[10px]">
           <div className="w-full aspect-w-16 aspect-h-10 bg-gray-900 rounded-tr-lg rounded-tl-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative">
             <img
               src="https://i.pinimg.com/736x/5e/cf/65/5ecf65ce06fdecff4ed19d9556149b58.jpg"
@@ -63,9 +63,7 @@ export function AboutMeCard() {
           </div>
         </div>
       </FollowerPointerCard>
-      <div
-        className="max-md:block hidden"
-      >
+      <div className="max-md:block hidden">
         <div className="relative overflow-hidden h-full rounded-2xl transition duration-200 group bg-gray-900 hover:shadow-xl border border-gray-900">
           <div className="w-full aspect-w-16 aspect-h-10 bg-gray-900 rounded-tr-lg rounded-tl-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative">
             <img

@@ -13,11 +13,13 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ visible }) => {
     >
       <ul className="flex justify-around w-full">
         <li>
-          <img
-            className="rounded-full w-[50px] h-[50px] p-0 m-0"
-            src="https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525"
-            alt="A"
-          />
+          <a href="#home">
+            <img
+              className="rounded-full w-[50px] h-[50px] p-0 m-0"
+              src="https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525"
+              alt="A"
+            />
+          </a>
         </li>
         <li>
           {/* <h4 className="text-pink-500 uppercase tracking-wide font-bold pl-2 my-auto">
@@ -26,24 +28,24 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ visible }) => {
         </li>
       </ul>
       <ul className="flex justify-around w-full items-center">
-        <li>
-          {/* <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-small">
+        {/*<li>
+           <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-small">
             Home
-          </h5> */}
-        </li>
+          </h5> 
+        </li>*/}
         <li>
           <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium text-center">
-            Me
+            <a href="#aboutme">Me</a>
           </h5>
         </li>
         <li>
           <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-            Portfolio
+            <a href="#projects">Portfolio</a>
           </h5>
         </li>
         <li>
           <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-            Contact
+            <a href="#contact">Contact</a>
           </h5>
         </li>
       </ul>

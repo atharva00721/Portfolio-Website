@@ -14,15 +14,15 @@ import { BackgroundGradientAnimation } from "./ui/background-gradient-animation"
 
 export function CardWithForm() {
   return (
-    <div className="w-[90%] mx-auto">
-      <h2 className="pt-4 md:pt-10 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 md:text-6xl">
+    <div className="w-[90%] mx-auto pb-20">
+      <h2 id="contact" className="pt-4 md:pt-10 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 md:text-6xl">
         Contact
       </h2>
       <Separator />
       <div className="mb-10"></div>
-      <div className="grid grid-rows-2 md:grid-cols-2">
-        <div>
-          <Card className="mx-auto bg-gray-900 border-0 p-5 md:rounded-l-3xl md:rounded-r-none rounded-t-3xl rounded-b-none">
+      <div className="flex flex-col lg:flex-row">
+        <div className="lg:w-1/2 max-lg:h-1/2">
+          <Card className="mx-auto bg-gray-900 border-0 p-5 lg:rounded-l-3xl lg:rounded-r-none rounded-t-3xl rounded-b-none ">
             <CardHeader className="text-5xl text-white">
               <CardTitle className="font-bold tracking-wide">
                 Get in Touch!
@@ -61,7 +61,7 @@ export function CardWithForm() {
             </CardFooter>
           </Card>
         </div>
-        <div className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 overflow-hidden h-[461px] md:rounded-r-3xl md:rounded-l-none rounded-b-3xl rounded-t-none">
+        <div className="max-lg:h-[200px] lg:w-1/2 text-white bg-gradient-to-r from-cyan-500 to-blue-500 overflow-hidden lg:h-[467px] lg:rounded-r-3xl lg:rounded-l-none rounded-b-3xl rounded-t-none">
           <BackgroundGradientAnimation />
         </div>
       </div>
