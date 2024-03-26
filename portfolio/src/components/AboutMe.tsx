@@ -40,7 +40,7 @@ const AboutMe: React.FC = () => {
                 - Frontend
                 <p className="py-3">
                   <a href="https://skillicons.dev">
-                    <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,redux,tailwind,vite,materialui&perline=4" />
+                    <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vite,materialui&perline=4" />
                   </a>
                 </p>
                 - Tools

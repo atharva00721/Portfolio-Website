@@ -2,6 +2,7 @@
 import React from "react";
 import { Separator } from "./SeparatorBar";
 import { TabsDemo } from "./projectstab";
+import { Button } from "./ui/button";
 
 const ProjectsTabs: React.FC = () => {
   return (
@@ -10,8 +11,13 @@ const ProjectsTabs: React.FC = () => {
         Projects
       </h2>
       <Separator />
-      <div className="p-5 pt-10 flex justify-center">
+      <div className="p-5 pt-10 flex justify-center ">
         <TabsDemo />
+      </div>
+      <div>
+        <Button className="mr-5 float-right">
+          <a href="">See All</a>
+        </Button>
       </div>
     </div>
   );

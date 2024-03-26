@@ -32,8 +32,8 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ visible }) => {
           </h5> */}
         </li>
         <li>
-          <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-            About Me
+          <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium text-center">
+            Me
           </h5>
         </li>
         <li>
