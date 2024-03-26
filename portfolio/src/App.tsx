@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import { AuroraBackgroundDemo } from "./components/Homeaurora";
 import ProjectsTabs from "./components/Projects";
-import { ProfileForm } from "./components/ContactForm";
+// import { ProfileForm } from "./components/ContactForm";
 
 export default function App() {
   return (
