@@ -1,4 +1,3 @@
-// import { Button } from "../components/ui/button";
 import {
   Card,
   CardContent,
@@ -27,17 +26,15 @@ export function Tab() {
       <TabsContent value="project1">
         <Card className="bg-gray-900 border-0">
           <CardHeader className="text-4xl text-white">
-            <CardTitle className="font-bold tracking-wide">
-              Pwd gnrtor
-            </CardTitle>
+            <CardTitle className="font-bold tracking-wide">Veronica</CardTitle>
             <CardDescription className="text-zinc-300">
-              Make changes to your account here. Click save when you're done.
+              An AI Assistant to help the specially-abled.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
             <img
-              src="https://media.discordapp.net/attachments/950311940096393279/1222102042068385832/ad1e64d0f4a0f69e76d3d91dd72170dc.jpg?ex=6614fe38&is=66028938&hm=33cef088d705463dfd1532e32eed86b0d8d2d0e2326a4ccbd73d66bffc2c766d&=&format=webp&width=1110&height=625"
-              alt="test"
+              src="https://assets.devfolio.co/hackathons/f1a79bba9fec4817af48a38440ecd984/projects/c819d49fa9a84babb25a2a62d8d04ad7/518149a8-df77-4bd3-b685-88a05e0c1b2c.jpeg"
+              alt="Veronica"
               className="rounded-xl mx-auto"
             />
           </CardContent>
@@ -55,7 +52,9 @@ export function Tab() {
         <Card className="bg-gray-900 border-0">
           <CardHeader className="text-4xl text-white">
             <CardTitle className="font-bold tracking-wide">Car(cat)</CardTitle>
-            <CardDescription className="text-zinc-300">get a dog and a cat</CardDescription>
+            <CardDescription className="text-zinc-300">
+              get a dog and a cat
+            </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
             <img

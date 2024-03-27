@@ -30,9 +30,11 @@ const AboutMe: React.FC = () => {
                 My Background
               </h1>
               <p className="pt-3 md:pt-5 pb-5 font-normal text-sm md:text-base">
-                I have [X years] of experience in [Your Field], specializing in
-                [Your Specialization]. My journey has led me to work on projects
-                ranging from [Describe notable projects or achievements].
+                I am currently a Student at CDGI. Throughout my journey, I've
+                had the privilege of Joing to various projects, including
+                emerging victorious in both the Citro Hackathon and the Hackhive
+                Hackathon. These experiences have honed my skills and fueled my
+                passion for leveraging technology to make a meaningful impact.
               </p>
             </div>
             <div className="max-lg:w-80 p-3 bg-gray-900 rounded-xl shadow-2xl md:w-auto">

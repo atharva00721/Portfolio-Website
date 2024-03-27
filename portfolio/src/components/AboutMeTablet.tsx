@@ -73,7 +73,7 @@ const blogContent = {
   // date: "28th March, 2023",
   title: "Who am I?",
   description:
-    "Hello! I'm Atharva Raj Singh Thakur, a passionate Programmer based in Indore. With a keen eye for detail and a love for creativity, I strive to [Briefly describe your mission or goal]",
+    "Hello! I'm Atharva Raj Singh Thakur, a passionate programmer based in Indore. With a keen eye for detail and a love for creativity, I strive to make the world a better place with technology.",
   image:
     "https://i.pinimg.com/736x/5e/cf/65/5ecf65ce06fdecff4ed19d9556149b58.jpg",
   authorAvatar:

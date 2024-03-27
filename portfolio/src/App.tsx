@@ -5,6 +5,7 @@ import { AuroraBackgroundDemo } from "./components/Homeaurora";
 import ProjectsTabs from "./components/Projects";
 // import { ProfileForm } from "./components/ContactForm";
 import { CardWithForm } from "./components/ContactForm";
+// import WordChanger from "./components/wordschanger";
 
 // import TerminalContact from "./components/test";
 
@@ -17,7 +18,6 @@ export default function App() {
         <AboutMe />
         <ProjectsTabs />
         <CardWithForm />
-        {/* <TerminalContact /> */}
       </div>
     </>
   );

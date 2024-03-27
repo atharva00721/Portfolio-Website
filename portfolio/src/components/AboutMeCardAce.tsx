@@ -72,11 +72,11 @@ export function AboutMeCard() {
               className={`group-hover:scale-95 group-hover:rounded-2xl transform object-cover transition duration-200 `}
             />
           </div>
-          <div className=" p-4">
+          <div className="p-4">
             <h2 className="font-bold my-4 text-lg text-zinc-100">
               {blogContent.title}
             </h2>
-            <h2 className="font-normal my-4 text-sm text-zinc-300">
+            <h2 className="font-normal mt-4 mb-1 text-sm text-zinc-300">
               {blogContent.description}
             </h2>
             <div className="flex flex-row justify-between items-center mt-10">
@@ -124,7 +124,7 @@ const blogContent = {
   // date: "28th March, 2023",
   title: "Who am I?",
   description:
-    "Hello! I'm Atharva Raj Singh Thakur, a passionate Programmer based in Indore. With a keen eye for detail and a love for creativity, I strive to [Briefly describe your mission or goal]",
+    "Hello! I'm Atharva Raj Singh Thakur, a passionate programmer based in Indore. With a keen eye for detail and a love for creativity, I strive to make the world a better place with technology.",
   image: "/demo/thumbnail.png",
   authorAvatar:
     "https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525",
