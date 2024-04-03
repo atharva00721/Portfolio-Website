@@ -23,7 +23,7 @@ const AboutMe: React.FC = () => {
         <div className="lg:w-1/3 w-full max-w-full lg:max-w-xs lg:mx-4">
           {isTabletOriPad ? <AboutMeCardtab /> : <AboutMeCard />}
         </div>
-        <div className="w-full lg:w-2/3">
+        <div className="w-full">
           <div className="flex flex-col max-md:items-center">
             <div className="max-lg:my-5 p-3 w-80 justify-center bg-gray-900 rounded-xl shadow-2xl mb-4 md:w-auto">
               <h1 className="text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">

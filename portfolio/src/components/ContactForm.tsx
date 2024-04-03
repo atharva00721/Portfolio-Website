@@ -15,7 +15,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export function CardWithForm() {
   return (
-    <div className="w-[90%] mx-auto pb-20">
+    <div className="w-[90%] mx-auto pb-20 ">
       <h2
         id="contact"
         className="pt-4 md:pt-10 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 md:text-6xl"
@@ -24,7 +24,7 @@ export function CardWithForm() {
       </h2>
       <Separator />
       <div className="mb-10"></div>
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row lg:h-[467px]">
         <div className="lg:w-1/2 max-lg:h-1/2">
           <Card className="mx-auto bg-gray-900 border-0 p-5 lg:rounded-l-3xl lg:rounded-r-none rounded-t-3xl rounded-b-none ">
             <CardHeader className="text-5xl text-white">
@@ -65,7 +65,7 @@ export function CardWithForm() {
             </CardFooter>
           </Card>
         </div>
-        <div className="max-lg:h-[200px] lg:w-1/2 text-white bg-gradient-to-r from-cyan-500 to-blue-500 overflow-hidden lg:h-[467px] lg:rounded-r-3xl lg:rounded-l-none rounded-b-3xl rounded-t-none">
+        <div className="max-lg:h-[15rem] lg:w-1/2 text-white bg-gradient-to-r from-cyan-500 to-blue-500 overflow-hidden lg:h-[467px] lg:rounded-r-3xl lg:rounded-l-none rounded-b-3xl rounded-t-none">
           <BackgroundGradientAnimation className="z-0">
             <div className="absolute z-30 inset-0 flex items-start justify-start text-white font-bold px-5 pointer-events-none text-1xl text-left">
               <p className=" text-white drop-shadow-2xl text-5xl sm:text-3xl md:text-6xl pt-8">
