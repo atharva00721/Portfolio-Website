@@ -16,7 +16,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ visible }) => {
           <a href="#home">
             <img
               className="rounded-full w-[50px] h-[50px] p-0 m-0"
-              src="https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525"
+              src="/images/moon.png"
               alt="A"
             />
           </a>

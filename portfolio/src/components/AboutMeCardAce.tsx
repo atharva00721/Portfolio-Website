@@ -125,9 +125,9 @@ const blogContent = {
   title: "Who am I?",
   description:
     "Hello! I'm Atharva Raj Singh Thakur, a passionate programmer based in Indore. With a keen eye for detail and a love for creativity, I strive to make the world a better place with technology.",
-  image: "/demo/thumbnail.png",
+  image: "/images/me.jpg",
   authorAvatar:
-    "https://media.discordapp.net/attachments/950311940096393279/1221631429297836154/image_2024-03-25_064955835-removebg-preview.png?ex=661347ed&is=6600d2ed&hm=65e7822d9c19f0695abcc277e2b85f8314e0280ce9bb2b1152ddb65b764e0931&=&format=webp&quality=lossless&width=525&height=525",
+    "/images/moon.png",
 };
 
 const TitleComponent = ({

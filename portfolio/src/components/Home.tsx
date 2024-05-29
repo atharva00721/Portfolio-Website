@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import { Box, Container, Button } from "@radix-ui/themes";
 import { CardStackDemo } from "./cards";
-// import { HoverBorderGradientDemo } from "./hovereffButton";
-// import "./Home.css";
 
 const Home: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);

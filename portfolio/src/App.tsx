@@ -4,7 +4,7 @@ import AboutMe from "./components/AboutMe";
 import { AuroraBackgroundDemo } from "./components/Homeaurora";
 import ProjectsTabs from "./components/Projects";
 // import { ProfileForm } from "./components/ContactForm";
-import { CardWithForm } from "./components/ContactForm";
+import { BottomtextGrad } from "./components/ContactForm";
 // import WordChanger from "./components/wordschanger";
 
 // import TerminalContact from "./components/test";
@@ -17,7 +17,7 @@ export default function App() {
         <AuroraBackgroundDemo />
         <AboutMe />
         <ProjectsTabs />
-        <CardWithForm />
+        <BottomtextGrad />
       </div>
     </>
   );
