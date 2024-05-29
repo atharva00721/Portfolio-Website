@@ -21,7 +21,7 @@ const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ visible }) => {
           />
         </a>
         <a href="#home" className="my-auto">
-          <h4 className="text-pink-500 uppercase tracking-wide font-bold pl-2 my-auto hidden md:block">
+          <h4 className=" uppercase tracking-wide font-bold pl-2 my-auto hidden md:block">
             Atharva 
           </h4>
         </a>
