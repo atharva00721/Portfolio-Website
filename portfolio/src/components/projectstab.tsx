@@ -14,7 +14,6 @@ import {
 } from "../components/ui/tabs";
 import { Button, ButtonGroup } from "@nextui-org/react";
 import { Github } from "lucide-react";
-import { Separator } from "./SeparatorBar";
 
 export function Tab() {
   return (
@@ -85,7 +84,9 @@ export function Tab() {
       <TabsContent value="project2">
         <Card className="bg-gray-900 border-0 md:flex gap-2">
           <CardHeader className="text-4xl text-white">
-            <CardTitle className="font-bold tracking-wide mb-3">TODO'S</CardTitle>
+            <CardTitle className="font-bold tracking-wide mb-3">
+              TODO'S
+            </CardTitle>
             <hr className="!w-[50%] border-2 rounded-md  border-pink-500" />
             <CardDescription className="text-zinc-300 mb-2">
               A Simple Todo app made
